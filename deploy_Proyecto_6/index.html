@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival AF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <a href="#"><img src="build/img/logo_AF.png" alt="logo" class="logo"></a>
+            <nav class="navegacion-principal">
+                <a href="#lineup">Line Up</a>
+                <a href="#galeria">Galería</a>
+                <a href="#boletas">Boletas</a>
+            </nav>
+        </div>
+    </header>
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>Festival As Fuck</h2>
+                <p>Mayo 2023. Bogotá D.C., Colombia.</p>
+            </div>
+        </div>
+        <video autoplay muted loop>
+            <source src="video/concierto.mp4" type="video/mp4">
+            <source src="video/concierto.ogg" type="video/ogg">
+            <source src="video/concierto.webm" type="video/webm">
+        </video>
+    </div>
+    <section class="contenedor sobre-festival">
+        <div class="imagen">
+            <picture>
+                <source srcset="build/img/imagen_vocalista.avif" type="image/avif">
+                <source srcset="build/img/imagen_vocalista.webp" type="image/webp">
+                <img loading="lazy" width="200" height="300" src="build/img/imagen_vocalista.jpg" alt="imagen vocalista">
+            </picture>
+        </div>
+        <div class="contenido-festival">
+            <h2>Festival As Fuck</h2>
+            <p class="fecha">Mayo 2023. Bogotá D.C., Colombia</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus quaerat aperiam ex dolore! Iste exercitationem atque illo libero ex. Earum dicta velit architecto nihil numquam quas quibusdam tempora officia alias! Quae voluptatibus reiciendis repellendus facere consequatur quo, veniam hic magnam neque quasi doloremque. Porro voluptatum facere laboriosam, obcaecati atque impedit eligendi autem molestias. Nihil, aliquid.</p>
+        </div>
+    </section>
+
+    <section id="lineup" class="lineup">
+        <h3>Line Up</h3>
+        <p class="dia">Sábado 20</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-complementario1">
+                <p class="nombre-escenario">Rock</p>
+                <ul class="calendario">
+                    <li> 1:20 | <span>Los Prisioneros</span></li>
+                    <li> 2:20 | <span>Los Toreros Muertos</span></li>
+                    <li> 3:20 | <span>Hombres G</span></li>
+                    <li> 4:20 | <span>Blink-182</span></li>
+                </ul>
+            </div> <!--.escenario-->
+            <div class="escenario electronica bg-complementario2">
+                <p class="nombre-escenario">Electrónica</p>
+                <ul class="calendario">
+                    <li> 1:20 | <span>Richie Hawtin</span></li>
+                    <li> 2:20 | <span>La Amarula</span></li>
+                    <li> 3:20 | <span>Fernanda Martins</span></li>
+                    <li> 4:20 | <span>Rebekah</span></li>
+                </ul>
+            </div> <!--.escenario-->
+        </div> <!--.escenarios-contenedor-->
+
+        <p class="dia">Domingo 21</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-complementario1">
+                <p class="nombre-escenario">Rock</p>
+                <ul class="calendario">
+                    <li> 1:20 | <span>Metallica</span></li>
+                    <li> 2:20 | <span>Linkin Park</span></li>
+                    <li> 3:20 | <span>Led Zepellin</span></li>
+                    <li> 4:20 | <span>El Alcalde Morcilla</span></li>
+                </ul>
+            </div> <!--.escenario-->
+            <div class="escenario electronica bg-complementario2">
+                <p class="nombre-escenario">Electrónica</p>
+                <ul class="calendario">
+                    <li> 1:20 | <span>Castan</span></li>
+                    <li> 2:20 | <span>Acidtrash</span></li>
+                    <li> 3:20 | <span>Iris Leidenschaft</span></li>
+                    <li> 4:20 | <span>Sai and i</span></li>
+                </ul>
+            </div> <!--.escenario-->
+        </div> <!--.escenarios-contenedor-->
+    </section>
+
+    <section id="galeria" class="galeria contenedor">
+        <h3>Galería</h3>
+        <ul class="galeria-imagenes"></ul>
+    </section>
+
+    <section id="boletas" class="boletas">
+        <h3>Boletas</h3>
+        <div class="contenedor contenedor-boletas">
+            <div class="basico pase">
+                <p class="nombre-pase">Pase 1 día</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y bebida</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>$120</p>
+                </footer>
+            </div>
+            <div class="premium pase">
+                <p class="nombre-pase">Pase 2 días</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y bebida</li>
+                        <li>Camiseta del evento</li>
+                        <li>Acceso a backstage</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>$200</p>
+                </footer>
+            </div>
+        </div>
+        <p class="nota"><span>Nota:</span> <br> *Pago únicamente en taquilla el día del evento</p>
+    </section>
+
+    <footer class="site-footer">
+        <div class="contenido-footer contenedor">
+            <a href="#"><img src="build/img/logo_AF.png" alt="logo" class="logo"></a>
+            <p>© Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="build/js/app.js"></script>
+</body>
+</html>
